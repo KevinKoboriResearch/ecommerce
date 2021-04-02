@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
-import '../../../size_config.dart';
 
 class SplashContent extends StatelessWidget {
   const SplashContent({
@@ -19,7 +18,7 @@ class SplashContent extends StatelessWidget {
         Text(
           "TOKOTO",
           style: TextStyle(
-            fontSize: getProportionateScreenWidth(36),
+            fontSize: (36),
             color: kPrimaryColor,
             fontWeight: FontWeight.bold,
           ),
@@ -31,8 +30,8 @@ class SplashContent extends StatelessWidget {
         Spacer(flex: 2),
         Image.asset(
           image,
-          height: getProportionateScreenHeight(265),
-          width: getProportionateScreenWidth(235),
+          height: (265),
+          width: (235),
         ),
       ],
     );

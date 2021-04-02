@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shop_app/components/default_button.dart';
 import 'package:shop_app/models/Product.dart';
-import 'package:shop_app/size_config.dart';
 
 import 'color_dots.dart';
 import 'product_description.dart';
@@ -35,10 +34,10 @@ class Body extends StatelessWidget {
                       color: Colors.white,
                       child: Padding(
                         padding: EdgeInsets.only(
-                          left: SizeConfig.screenWidth * 0.15,
-                          right: SizeConfig.screenWidth * 0.15,
-                          bottom: getProportionateScreenWidth(40),
-                          top: getProportionateScreenWidth(15),
+                          left: MediaQuery.of(context).size.width * 0.15,
+                          right: MediaQuery.of(context).size.width * 0.15,
+                          bottom: (40),
+                          top: (15),
                         ),
                         child: DefaultButton(
                           text: "Add To Cart",

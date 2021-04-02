@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../../size_config.dart';
 
 class CustomAppBar extends PreferredSize {
   final double rating;
@@ -17,12 +16,12 @@ class CustomAppBar extends PreferredSize {
     return SafeArea(
       child: Padding(
         padding:
-            EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
+            EdgeInsets.symmetric(horizontal: (20)),
         child: Row(
           children: [
             SizedBox(
-              height: getProportionateScreenWidth(40),
-              width: getProportionateScreenWidth(40),
+              height: (40),
+              width: (40),
               child: FlatButton(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(60),
